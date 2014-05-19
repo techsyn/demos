@@ -8,9 +8,28 @@
 
 <script src="lib/js/jquery/jquery-1.11.1.min.js"></script>
 <script src="lib/js/home.js" type="text/javascript"></script>
-
+<script type="text/javascript">
+    // <![CDATA[
+    var dataPath = "./";
+    var tab = 0;
+    var tabs = ["designs", "effects"];
+    // ]]>
+</script>
 </head>
 <body>
-<div>Hello World!</div>
+<div class="home-wrapper">
+    <div class="header"><span>Demo List</span></div>
+    <div class="tabs">
+        <div class="tab">
+            <div class="cell" id="tab_0"><span>Designs</span></div>
+        </div>
+        <div class="tab">
+            <div class="cell" id="tab_1"><span>Effects</span></div>
+        </div>
+    </div>
+    <div class="tab-body">
+        <iframe src="designs/index.html" frameborder="0" class="frame-tab-contents"></iframe>
+    </div>
+</div>
 </body>
 </html>
